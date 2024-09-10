@@ -1,13 +1,12 @@
-// script.jsx
-const App = () => {
-  return (
-    <div>
-      <h1>Hello, React from JSX!</h1>
-      <p>Welcome to your manually created React app.</p>
-    </div>
-  );
-};
+import React from "react";
+import { createRoot } from "react-dom/client";
 
-// ReactDOMでAppコンポーネントをルートにレンダリングする
-const rootElement = document.getElementById("root");
-ReactDOM.createRoot(rootElement).render(<App />);
+export default function App() {
+  //このdiv要素にクラス名とテキストを追加してください
+  return <div className=""></div>;
+}
+
+// 👇 こちらのコードについては次のレッスンで解説します
+
+export const root = createRoot(document.getElementById("root"));
+root.render(<App />);
