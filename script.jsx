@@ -64,7 +64,7 @@ const PineappleSpecialText = () => {
     <div className="pineapple_special_text">
       <p>
         誰もが憧れるパイナップル職に着けるチャンス！
-        パイナップルの魅力に惹かれた方へ, 私たちは、あなたをお待ちしています！
+        パイナップルの魅力に惹かれた方へ、私たちは、あなたをお待ちしています！
       </p>
     </div>
   );
