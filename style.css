@@ -20,14 +20,13 @@ body {
   font-size: 48px;
   font-weight: bold;
   text-align: center; /* 文字を中央揃えにする */
-  padding: 20px 0; /* 上下のパディングを追加 */
 }
 
 /* 画像のスタイル (必要に応じて調整) */
 .pineapple_girl_image {
   display: block;
   max-width: 100%; /* 画像がコンテナの幅に収まるように */
-  height: auto; /* 高さを自動調整 */
+  height: 300px; /* 高さを自動調整 */
 }
 
 /* コンテナ */
@@ -42,8 +41,28 @@ body {
 /* ボックス */
 .box {
   flex: 1 1 40%; /* 幅を40%に設定 */
-  background-color: green;
-  height: 150px;
+  background-color: rgb(167, 245, 144);
+  height: auto;
   margin: 10px; /* 四角形同士の間隔を調整 */
   min-width: 150px; /* 最小幅を設定（必要に応じて調整） */
+}
+
+/* ボックスの中の要素達 */
+.pineapple_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 32px;
+}
+.pineapple_text_indent {
+  display: block;
+  text-indent: 20px; /* インデントの幅を調整 */
+}
+
+.pineaple_box_container {
+  display: flex;
+}
+.pineapple_special_text {
+  font-size: 24px;
 }
