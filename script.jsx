@@ -1,12 +1,7 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+const App = () => {
+  return <div className="hello">Hello, React!</div>;
+};
 
-export default function App() {
-  //このdiv要素にクラス名とテキストを追加してください
-  return <div className=""></div>;
-}
-
-// 👇 こちらのコードについては次のレッスンで解説します
-
-export const root = createRoot(document.getElementById("root"));
-root.render(<App />);
+// Reactアプリを描画
+const rootElement = document.getElementById("root");
+ReactDOM.createRoot(rootElement).render(<App />);
